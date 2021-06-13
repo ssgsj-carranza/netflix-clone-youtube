@@ -1,4 +1,4 @@
-const API_KEY = '1639b955950ac265e4c5362e98169a28';
+const API_KEY = 'c99e6e307d5dfeb0116bf2ea3aabb4ce';
 
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
@@ -10,5 +10,6 @@ const requests = {
     fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
     fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
 }
+console.log('netflix originals', requests);
 
 export default requests;
