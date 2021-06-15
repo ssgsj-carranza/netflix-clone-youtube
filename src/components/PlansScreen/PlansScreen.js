@@ -75,9 +75,10 @@ function PlansScreen() {
                            <h5>{productData.name}</h5>
                            <h6>{productData.description}</h6>
                        </div>
-                       <button onClick={() => !isCurrentPackage && loadCheckout(productData.prices.priceId)}>
+                       {/* <button onClick={() => !isCurrentPackage && loadCheckout(productData.prices.priceId)}>
                            {isCurrentPackage ? 'Current Package' : 'Subscribe'}
-                        </button>
+                        </button> */}
+                        <button onClick={() => loadCheckout(productData.prices.priceId)}>Subscribe</button>
                    </div> 
                 );
             })}
