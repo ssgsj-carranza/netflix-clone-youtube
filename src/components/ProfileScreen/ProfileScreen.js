@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../../features/userSlice'
 import { auth } from '../../firebase'
+import PlansScreen from '../PlansScreen/PlansScreen'
 
 function ProfileScreen() {
     const user = useSelector(selectUser);
